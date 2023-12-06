@@ -1,0 +1,32 @@
+.img {
+  background-image: url(../../assest/img/img_back.svg);
+  transform: scaleX(-1);
+  width: 100%;
+  /* height: 70vh; */
+}
+
+.text_h1 {
+  transform: scaleX(-1);
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  padding-left: 40px;
+}
+
+.text_h1 h1 {
+  font-size: 96px;
+}
+
+.btn {
+  display: flex;
+  padding: 16px 56px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: var(--radius-small, 6px);
+  background: #393;
+  border: none;
+  color: white;
+}
