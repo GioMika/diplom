@@ -1,3 +1,30 @@
+.footer {
+  margin-top: 50px;
+}
+
+
+
+@media (max-width:600px){
+
+.social_elements {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer_adress{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.text_contact{
+text-align: center;
+}
+
+}
+
+
+
 .text_contact {
   color: var(--txt-black, #282828);
   font-family: Montserrat;
@@ -17,7 +44,7 @@
 
 
 .number_phone {
-  width: 50vw;
+
   border-radius: var(--radius-big, 12px);
   background: var(--light-grey, #F1F3F4);
   
@@ -27,8 +54,8 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-  flex: 1 0 0;
   align-self: stretch;
+  width: 700px;
 }
 
 .p_number {
@@ -154,10 +181,12 @@ font-family: Montserrat;
 font-size: 40px;
 font-style: normal;
 font-weight: 600;
-line-height: 110%; /* 44px */
+line-height: 110%;
 }
 
 .map {
   padding: 40px;
  width: 100%;
+margin-top: -50px;
 }
+

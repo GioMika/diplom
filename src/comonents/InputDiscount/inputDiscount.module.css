@@ -1,11 +1,10 @@
 
 
-
-
 .section {
   border-radius: var(--radius-big, 12px);
   background: linear-gradient(261deg, #0B710B 32.63%, #393 98.96%);
-  /* width: 100%; */
+margin-top:70px ;
+
 }
 
 
@@ -24,7 +23,7 @@
 }
 
 .all_elements {
-  /* width: 100%; */
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,10 +34,7 @@
 }
 
 .image {
-
   max-width: 350px;
-  /* width: 30vw; */
-
 }
 .all_inputs {
   display: flex;
@@ -47,9 +43,14 @@
   gap: 16px;
 }
 
-@media(max-width:560px){
+@media(max-width:700px){
   .all_elements {
   flex-direction: column;
+  gap: 5px;
+  }
+
+  .section {
+  margin-top:70px ;
   }
 }
 
