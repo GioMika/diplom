@@ -15,7 +15,7 @@ function Header() {
         <Link to='/sale'><p>All sales</p></Link>
 
       </div>
-      <img src={card} alt="card" />
+     <Link to='/cart'><img src={card} alt="card" /></Link> 
     </header>
 
   )

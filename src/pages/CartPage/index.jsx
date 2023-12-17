@@ -1,9 +1,12 @@
-import React from 'react'
+import Cart from "../../comonents/Cart/Index";
+import styles from "./styles.module.css"
+
+
 
 function CartPage() {
   return (
-    <div>
-      
+    <div className={styles.carItem}>
+      <Cart/>
     </div>
   )
 }
