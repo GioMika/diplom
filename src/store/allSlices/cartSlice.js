@@ -8,7 +8,7 @@ const cartSlice = createSlice({
   name: 'cart',
   initialState: {
     list:getLocalItems
-  },
+ },
 
   reducers: {
     addItemCart(state, action) {
@@ -18,7 +18,7 @@ const cartSlice = createSlice({
 
       if (!productCart) {
         state.list.push({
-          ...action.payload, count: 1
+          ...action.payload, count: 1,
         })
       } else {
         productCart.count++
@@ -43,14 +43,14 @@ const cartSlice = createSlice({
   localStorage.setItem('item',JSON.stringify(state.list))
 
     },
-
     deleteItem(state,action){
       state.list =  state.list.filter((elem) =>  elem.id !== action.payload)
       localStorage.setItem('item',JSON.stringify(state.list))
-    }
+    },
+
+
+
   }
-
-
 })
 
 

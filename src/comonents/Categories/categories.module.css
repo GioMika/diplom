@@ -2,18 +2,19 @@
   display: flex;
   justify-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   justify-content: space-around;
   padding-left: 5px;
   padding-right: 5px;
   margin-top: 40px;
-
+width: 100%;
 }
 
 .imgList {
   width: 250px;
   height: 250px;
   border-radius: 10px;
+
 }
 
 
@@ -24,14 +25,9 @@
     justify-content: space-around;
     row-gap: 60px;
     padding-top:20px;
+
   }
 }
-
-
-
-
-
-
 
 
 .textTitle {

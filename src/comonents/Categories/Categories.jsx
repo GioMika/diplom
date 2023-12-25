@@ -16,7 +16,6 @@ function Categories({ show4 }) {
   return (
     <section className={styles.sectionBlock}>
       {showCategories.map((elem) => (
-
         <div className={styles.imgList} key={elem.id} style={
           { backgroundImage: `url(http://localhost:3333${elem.image})`, backgroundSize: 'cover' }}>
 

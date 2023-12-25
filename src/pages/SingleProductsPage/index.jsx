@@ -1,10 +1,13 @@
+import SingleItem from "../../comonents/SingleItem/SingleItem"
 
-
-import React from 'react'
 
 function SingleProductsPage() {
   return (
-    <div>index</div>
+
+    <div>
+      <SingleItem/>
+    </div>
+
   )
 }
 

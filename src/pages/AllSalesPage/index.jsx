@@ -1,8 +1,11 @@
+import AllSales from "../../comonents/AllSales/AllSales";
 
 
 function AllSalesPage() {
   return (
-    <div>index</div>
+    <div> 
+      <AllSales/>
+    </div>
   )
 }
 

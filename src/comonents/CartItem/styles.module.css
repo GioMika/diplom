@@ -1,7 +1,78 @@
-
-
+.allElements {
+  width: 50vw;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 12px;
+  border: 1px solid var(--grey-divider, #ddd);
+  margin: 0 auto;
+}
 
 .btn {
-  width: 100px;
-  height: 30px;
+  display: flex;
+  width: 58px;
+  height: 58px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  border-radius: var(--radius-small, 6px);
+  border: 1px solid var(--grey-divider, #ddd);
+}
+
+.elementsCounter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 5%;
+  padding: 20px;
+}
+
+.imgList {
+  width: 200px;
+  height: 150px;
+
+  border-radius: var(--radius-big, 12px) 0px 0px var(--radius-big, 12px);
+  border: 1px solid var(--grey-divider, #ddd);
+}
+
+.deletedProducts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_prise {
+  /* width: 100%; */
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+  padding-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.prise_sale_none {
+  display: none;
+}
+
+.prise_sale {
+  color: #282828;
+  font-family: Montserrat;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+}
+
+.prise_default {
+  color: #8b8b8b;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  text-decoration: line-through;
 }

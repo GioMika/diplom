@@ -1,0 +1,45 @@
+.allElements {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+padding-top: 80px;
+gap: 50px;
+}
+
+
+.img {
+  width: 300px;
+  height: 250px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: aqua;
+  column-gap: 50px;
+}
+
+.textDescription {
+  width: 40vw;
+}
+
+.textDescription h4 {
+  padding-top: 20px;
+}
+
+
+ .addProducts {
+  display: block;
+  cursor: pointer;
+  width: 200px;
+  height: 30px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 50px;
+  margin-left: 28px;
+  background-color: rgba(179, 3, 255, 0.566);
+  color: rgb(1, 247, 214);
+  font-size: 20px;
+
+}

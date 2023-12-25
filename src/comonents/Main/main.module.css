@@ -2,9 +2,9 @@
   background-image: url(../../assest/img/img_back.svg);
   transform: scaleX(-1);
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   padding-top: 100px;
-padding-bottom: 200px;
+  padding-bottom: 200px;
 }
 
 .text_h1 {
@@ -36,65 +36,67 @@ padding-bottom: 200px;
 }
 
 .textCategories {
- padding-left: 40px;
-padding-top: 20px;
+  padding-left: 40px;
+  padding-top: 20px;
 }
 
 
 
 .line {
   width: 100%px;
-border: 1px solid red;
-position: relative;
+  border: 1px solid red;
+  position: relative;
 
 }
 
-.btnCategories{
+.btnCategories {
   display: flex;
   justify-self: center;
   align-self: center;
- margin-right: 40px;
-width: 140px;
-height: 36px; 
-padding: 8px 16px;
-border-radius: var(--radius-small, 6px);
-border: 1px solid var(--grey-divider, #DDD);
+  margin-right: 40px;
+  width: 140px;
+  height: 36px;
+  padding: 8px 16px;
+  border-radius: var(--radius-small, 6px);
+  border: 1px solid var(--grey-divider, #DDD);
 }
 
-.ItemsCategories{
+.ItemsCategories {
   display: flex;
   justify-content: space-between;
-  
+
 }
 
 .textCategories {
   color: var(--txt-black, #282828);
-font-family: Montserrat;
-font-size: 64px;
-font-style: normal;
-font-weight: 700;
-line-height: 110%;
-justify-content: center;
-align-items: center;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  justify-content: center;
+  align-items: center;
 
 }
 
 @media (max-width: 850px) {
   .text_h1 h1 {
     font-size: 66px;
- 
+
   }
-  .ItemsCategories{
+
+  .ItemsCategories {
     display: flex;
-   gap: 50px;
-   padding-top: 20px;
+    gap: 50px;
+    padding-top: 20px;
   }
 
   .btnCategories {
     margin-top: 23px;
- width: 200px;
+    width: 200px;
   }
+
   .textCategories {
- margin-left: -36px;
+    margin-left: -36px;
   }
 }

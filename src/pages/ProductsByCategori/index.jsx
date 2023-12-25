@@ -4,10 +4,7 @@ import { getProductsBycategory } from "../../request/allProducts"
 import Products from "../../comonents/Products/Index"
 import { useParams } from "react-router-dom"
 
-
-
 function ProductsByCategori() {
-
   const { id } = useParams()
 
   const dispatch = useDispatch()
@@ -16,7 +13,6 @@ function ProductsByCategori() {
   }, [dispatch])
 
   const getByCategories = useSelector((state) => state.productByCategory.list)
-
   const categoryTitle = getByCategories.category;
   const getBycategoryesData = getByCategories?.data || [];
 
