@@ -1,0 +1,33 @@
+
+
+
+.inputs {
+  display: flex;
+  gap: 30px;
+  width: 30px;
+  padding-left: 40px;
+  align-items: center;
+}
+
+.priceText {
+  color: var(--txt-black, #282828);
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+}
+
+.price {
+  padding-left: 10px;
+  font-size: 20px;
+  width: 80px;
+
+  border-radius: var(--radius-small, 6px);
+border: 1px solid var(--grey-divider, #DDD);
+
+display: flex;
+width: 112px;
+padding: 8px 16px;
+align-items: center;
+gap: 10px;
+}

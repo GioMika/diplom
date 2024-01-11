@@ -6,13 +6,35 @@
   z-index: 1;
   width: 100%;
   background-color: white;
-  opacity: 0.8;
+  /* opacity: 0.8; */
+height: 100px;
+}
 
+.link {
+  text-decoration: none;
+  color: var(--txt-black, #282828);
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 130%; 
 }
 
 
 .paragraph {
   display: flex;
   gap: 32px;
+}
 
+
+@media (max-width : 700px){
+  .paragraph {
+    display: flex;
+    gap: 11px;
+  }
+}
+
+
+.link:hover {
+color: rgb(12, 145, 145);
 }

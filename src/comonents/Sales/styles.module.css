@@ -1,20 +1,35 @@
 
+.sale {
+  padding-top: 50px;
+  position: absolute;
+  padding-left: 70px;
+  color: var(--txt-black, #282828);
+font-family: Montserrat;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: 110%;
+
+}
+
+
 .allElements {
   display: flex;
-
   justify-content: center;
-  /* align-items: center; */
+
   flex-wrap: wrap;
-  gap: 10px;
+  gap:110px;
   padding-top: 150px;
 }
 
 
 
 .imgList {
+
   width: 250px;
   height: 250px;
   border-radius: 10px;
+
 }
 
 
@@ -91,10 +106,6 @@ margin-top: -50px;
   background: var(--green, #393);
 
   width:80px;
-
-  /* justify-content: flex-end;
-  align-items: flex-start; */
-
   border-radius: 12px;
 
   padding-left: 10px;

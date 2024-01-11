@@ -13,8 +13,6 @@ try{
 }
 })
 
-
-
 export const getProductsBycategory = createAsyncThunk('productByCategory/getProductsBycategory', async(categoryId) => {
   const url = `http://localhost:3333/categories/${categoryId}`
   try{
@@ -25,12 +23,5 @@ export const getProductsBycategory = createAsyncThunk('productByCategory/getProd
    throw error
   }
   })
-
-
-
-
-
-
-  
 
 export default allProducts ;

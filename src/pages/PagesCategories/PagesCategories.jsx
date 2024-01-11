@@ -1,17 +1,19 @@
 import styles from "./styles.module.css"
-import Categories from "../../comonents/Categories/Categories";
-
+import { Link } from "react-router-dom";
+import Categories2 from "../../comonents/Categories/Categories 2";
 function PagesCategories() {
   return (
     <>
       <div className={styles.btns}>
+        <Link className={styles.link} to={'/'}>
         <button className={styles.btn}>Main page</button>
+        </Link>
         <span className={styles.span}></span>
-        <button className={styles.btn}>Categories</button>
+        <Link className={styles.link} to={'/products'}>
+        <button className={styles.btn}>All products</button>
+        </Link>
       </div>
-      <section className={styles.sectionBlock}>
-        <Categories />
-      </section>
+<Categories2/>
     </>
   );
 }

@@ -3,6 +3,9 @@ import { useEffect } from "react"
 import { getProductsBycategory } from "../../request/allProducts"
 import Products from "../../comonents/Products/Index"
 import { useParams } from "react-router-dom"
+import styles from './styles.module.css'
+import SortForm from "../../comonents/FilterForms/SortForm"
+
 
 function ProductsByCategori() {
   const { id } = useParams()
@@ -10,16 +13,19 @@ function ProductsByCategori() {
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(getProductsBycategory(id))
-  }, [dispatch])
+  }, [])
 
   const getByCategories = useSelector((state) => state.productByCategory.list)
+  console.log(getByCategories);
   const categoryTitle = getByCategories.category;
+const categoryT = categoryTitle?.title
   const getBycategoryesData = getByCategories?.data || [];
 
   return (
     <div>
-      <h2>{categoryTitle?.title}</h2>
-      <Products producsts={getBycategoryesData}/>
+      
+     <SortForm />
+      <Products products={getBycategoryesData}/>
     </div>
   )
 }

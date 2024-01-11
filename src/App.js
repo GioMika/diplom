@@ -9,8 +9,8 @@ import MainPage from "./pages/MainPage/Index.jsx"
 import NotFoundPage from "./pages/NotFoundPage/index.jsx"
 import PagesCategories from "./pages/PagesCategories/PagesCategories.jsx"
 import ProductsByCategori from "./pages/ProductsByCategori/index.jsx"
-import SingleProductsPage from "./pages/SingleProductsPage/index.jsx"
 import SingleItem from "./comonents/SingleItem/SingleItem.jsx";
+import SingleProductsPage from "./pages/SingleProductsPage/index.jsx";
 
 function App() {
 
@@ -18,7 +18,6 @@ function App() {
     <div>
       <Header />
       <Routes>
-    
         <Route path="/" element={<MainPage />} />
         <Route path="/products" element={<AllProductsPage />} />
         <Route path="/sale" element={<AllSalesPage />} />
@@ -26,8 +25,7 @@ function App() {
         <Route path="*" element={<NotFoundPage />} />
         <Route path="/categories" element={<PagesCategories />} />
         <Route path="/categories/:id" element={<ProductsByCategori />} />
-        <Route path="/products/:product_id" element={<SingleItem />} />
-        
+        <Route path="/products/:product_id" element={<SingleProductsPage/>} />
       </Routes>
       <Footer />
     </div>

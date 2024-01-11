@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import getCategories from "../../request/asynckCategories";
+import { act } from "react-dom/test-utils";
 
 
 const categoriesSlice = createSlice({
@@ -9,7 +10,9 @@ const categoriesSlice = createSlice({
     categoriesList: []
   },
 reducers:{
+  
 
+  
 },
 
 extraReducers: (builder) => 

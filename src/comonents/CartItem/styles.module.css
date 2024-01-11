@@ -27,17 +27,34 @@
   gap: 15px;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  /* width: 100%; */
   border-radius: 5%;
   padding: 20px;
 }
 
-.imgList {
-  width: 200px;
-  height: 150px;
 
-  border-radius: var(--radius-big, 12px) 0px 0px var(--radius-big, 12px);
-  border: 1px solid var(--grey-divider, #ddd);
+@media(max-width:700px){
+  .elementsCounter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    padding: 20px;
+
+  }
+
+  .allElements {
+margin-left: 280px;
+  }
+}
+
+
+
+
+.imgList {
+  width: 250px;
+  height: 150px;
+border-radius: 20px;
 }
 
 .deletedProducts {
@@ -46,7 +63,6 @@
 }
 
 .product_prise {
-  /* width: 100%; */
   display: flex;
   gap: 1rem;
   align-items: flex-end;
