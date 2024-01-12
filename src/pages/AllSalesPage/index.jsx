@@ -4,6 +4,7 @@ import { useDispatch,useSelector } from "react-redux";
 import { useEffect } from "react";
 import allProducts from "../../request/allProducts";
 import SortForm from "../../comonents/FilterForms/SortForm";
+import FilterForm from "../../comonents/FilterForms/FilterForm";
 
 function AllSalesPage() {
 
@@ -20,8 +21,10 @@ function AllSalesPage() {
 
   return (
     <div> 
-      <SortForm />
+        <SortForm />
+      <FilterForm />
       <Products products={products}/>
+    
     </div>
   )
 }

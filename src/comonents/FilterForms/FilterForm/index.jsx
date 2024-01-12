@@ -7,20 +7,14 @@ import { useDispatch } from "react-redux";
 
 function FilterForm() {
   const dispatch = useDispatch();
-
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(Infinity);
-
+  
   const handleChange = (min, max) => {
-    //   dispatch(filterPrice({minPrice : min ,
-    //   maxPrice: max,
-    //   }))
-    // }
  dispatch(filterPrice({ minPrice: min, maxPrice: max }));
   };
   let handleMinChange = (e) => {
     let value = +e.target.value || 0;
-
     if (value < 0) {
       value = 0;
     }

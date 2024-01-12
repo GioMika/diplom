@@ -47,8 +47,6 @@ function Sales() {
                 />
               </Link>
            
-         
-
               <button
                 className={styles.addProducts}
                 onClick={() => dispatch(addItemCart(elem))}

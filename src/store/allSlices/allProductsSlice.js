@@ -1,8 +1,5 @@
-
 import { createSlice } from "@reduxjs/toolkit";
 import allProducts from "../../request/allProducts";
-
-
 
 const productsSlice = createSlice({
   name: 'products',
@@ -29,7 +26,6 @@ const productsSlice = createSlice({
 
     filterPrice(state,action) {
       const {minPrice,maxPrice} = action.payload
-      console.log(minPrice,maxPrice);
       state.list.map((elem) => {
         let actualPrice = elem.discont_price || elem.price;
         if(actualPrice >= minPrice && actualPrice <= maxPrice){
@@ -38,8 +34,7 @@ const productsSlice = createSlice({
           elem.showProductFilter = false
         }
         return elem
-      })
-      
+      }) 
     },
 
     discountProducts(state, action) {

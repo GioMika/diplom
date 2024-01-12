@@ -35,7 +35,8 @@ const productByCategory = createSlice({
       })
       .addCase(getProductsBycategory.fulfilled, (state, action) => {
       const {data} = action.payload
-        state.list.data = data.map((elem) => ({...elem, showProduct: true }))
+        state.list.data = data.map((elem) => ({...elem, showProduct: true ,
+          showProductFilter:true}))
       })
       .addCase(getProductsBycategory.rejected, (state) => {
         state.status = 'rejected'

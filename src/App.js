@@ -9,7 +9,6 @@ import MainPage from "./pages/MainPage/Index.jsx"
 import NotFoundPage from "./pages/NotFoundPage/index.jsx"
 import PagesCategories from "./pages/PagesCategories/PagesCategories.jsx"
 import ProductsByCategori from "./pages/ProductsByCategori/index.jsx"
-import SingleItem from "./comonents/SingleItem/SingleItem.jsx";
 import SingleProductsPage from "./pages/SingleProductsPage/index.jsx";
 
 function App() {

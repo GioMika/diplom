@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import getCategories from "../../request/asynckCategories";
-import { act } from "react-dom/test-utils";
+
 
 
 const categoriesSlice = createSlice({
@@ -9,9 +9,9 @@ const categoriesSlice = createSlice({
     status:null,
     categoriesList: []
   },
-reducers:{
-  
 
+reducers:{
+ 
   
 },
 
@@ -28,6 +28,4 @@ builder
   state.status = 'rejected'
 })
 })
-
-
 export default categoriesSlice.reducer

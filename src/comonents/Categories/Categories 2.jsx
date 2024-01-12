@@ -14,8 +14,6 @@ function Categories2({ show4 }) {
   const showCategories = show4 ? categories.slice(0, -1) : categories;
 
   return (
-  
-  
       <section className={styles.sectionBlock}>
         {showCategories.map((elem) => (
           <div

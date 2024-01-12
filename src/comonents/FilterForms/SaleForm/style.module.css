@@ -1,0 +1,24 @@
+.checkBox {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  /* margin-bottom: 30px; */
+  color: var(--txt-black, #282828);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  /* margin-left: 40px; */
+}
+
+.check {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: var(--radius-small, 6px);
+  border: 1px solid var(--grey-divider, #ddd);
+}

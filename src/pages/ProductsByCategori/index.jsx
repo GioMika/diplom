@@ -23,7 +23,6 @@ const categoryT = categoryTitle?.title
 
   return (
     <div>
-      
      <SortForm />
       <Products products={getBycategoryesData}/>
     </div>

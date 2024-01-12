@@ -1,10 +1,10 @@
 
 
 .section {
+
   border-radius: var(--radius-big, 12px);
   background: linear-gradient(261deg, #0B710B 32.63%, #393 98.96%);
 margin-top:70px ;
-
 }
 
 
@@ -41,6 +41,7 @@ margin-top:70px ;
   flex-direction: column;
   width: 316px;
   gap: 16px;
+  color: rgb(229, 241, 4);
 }
 
 @media(max-width:700px){
@@ -66,7 +67,7 @@ margin-top:70px ;
   padding-left: 32px;
 }
 
-.btn {
+.submit {
   display: flex;
   width: 316px;
   padding: 16px;
@@ -84,6 +85,7 @@ margin-top:70px ;
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
+margin-bottom: 10px;
 }
 
 .input::placeholder {
