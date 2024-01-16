@@ -2,18 +2,30 @@
   display: flex;
   justify-items: center;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 50px;
   justify-content: space-around;
   padding-left: 5px;
   padding-right: 5px;
   width: 100%;
-  padding-top: 100px;
+  padding: 30px;
+}
+
+.text_h1 {
+color: var(--txt-black, #282828);
+font-family: Montserrat;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: 110%; 
+padding-left: 50px;
+padding-top: 40px;
 }
 
 .imgList {
   width: 250px;
   height: 250px;
   border-radius: 10px;
+  border: 1px solid rgb(32, 31, 31);
 }
 
 @media (max-width: 700px) {
@@ -22,7 +34,7 @@
     grid-template-columns: repeat(1fr);
     justify-content: space-around;
     row-gap: 70px;
-    /* padding-top: 260px; */
+    padding-top: 60px;
   }
 }
 

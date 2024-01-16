@@ -14,6 +14,8 @@ function Categories2({ show4 }) {
   const showCategories = show4 ? categories.slice(0, -1) : categories;
 
   return (
+    <>
+    <h1 className={styles.text_h1}>Categories</h1>
       <section className={styles.sectionBlock}>
         {showCategories.map((elem) => (
           <div
@@ -30,6 +32,7 @@ function Categories2({ show4 }) {
           </div>
         ))}
       </section>
+      </>
 
   );
 }

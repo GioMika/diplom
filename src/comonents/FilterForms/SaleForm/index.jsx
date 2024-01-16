@@ -13,7 +13,7 @@ function SaleForm() {
 
   return (
     <div className={style.checkBox}>
-      <h5>Discounted items</h5>
+      <h5 className={style.text}>Discounted items</h5>
       <input
       className={style.check}
         onChange={changeState}

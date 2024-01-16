@@ -19,7 +19,6 @@ const sortFunction = (e) => {
   onChange={sortFunction}
   className={styles.select_sort}
   name="products_select"
-  id="products_select"
 >
   <option  value="default">by default</option>
   <option  value="low-high">Price (Low to High)</option>

@@ -7,17 +7,14 @@ import { useSelector } from "react-redux";
 function SingleProductsPage() {
   const { product_id } = useParams();
   const dispatch = useDispatch();
-
   useEffect(() => {
     dispatch(fetchProductId(product_id));
   }, [dispatch, product_id]);
-
   const productIdList = useSelector((state) => state.product?.list)
   return (
-
-    <div>
+    <>
       <SingleItem key={productIdList.id} {...productIdList}/>
-    </div>
+    </>
 
   )
 }

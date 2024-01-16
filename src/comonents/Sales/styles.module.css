@@ -1,14 +1,13 @@
-
 .sale {
   padding-top: 50px;
   position: absolute;
   padding-left: 70px;
   color: var(--txt-black, #282828);
-font-family: Montserrat;
-font-size: 64px;
-font-style: normal;
-font-weight: 700;
-line-height: 110%;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
 
 }
 
@@ -18,7 +17,7 @@ line-height: 110%;
   justify-content: center;
 
   flex-wrap: wrap;
-  gap:110px;
+  gap: 110px;
   padding-top: 150px;
 }
 
@@ -63,13 +62,13 @@ line-height: 110%;
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;
-  line-height: 130%; 
+  line-height: 130%;
   text-decoration: line-through;
-padding-top: 15px;
+  padding-top: 15px;
 }
 
 
-.addProducts{
+.addProducts {
   display: none;
 }
 
@@ -81,7 +80,7 @@ padding-top: 15px;
   width: 200px;
   height: 30px;
   margin: 0 auto;
-margin-top: -50px;
+  margin-top: -50px;
   position: absolute;
   border: none;
   border-radius: 50px;
@@ -97,7 +96,8 @@ margin-top: -50px;
 }
 
 
-.procent {margin-left: 20px;
+.procent {
+  margin-left: 20px;
   position: absolute;
   padding-left: 190px;
 
@@ -105,12 +105,12 @@ margin-top: -50px;
   border-radius: 20px;
   background: var(--green, #393);
 
-  width:80px;
+  width: 80px;
   border-radius: 12px;
 
   padding-left: 10px;
-margin-left: 150px;
-margin-top: 30px;
+  margin-left: 150px;
+  margin-top: 30px;
   color: var(--txt-white, #fff);
   font-family: Montserrat;
   font-size: 20px;
@@ -121,4 +121,3 @@ margin-top: 30px;
 
 
 }
-

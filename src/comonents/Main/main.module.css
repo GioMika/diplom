@@ -2,13 +2,27 @@
   background-image: url(../../assest/img/img_back.svg);
   transform: scaleX(-1);
   width: 100%;
-  height: 77vh;
+  height: 70vh;
   padding-top: 100px;
   padding-bottom: 200px;
 }
 
+.main {
+  padding-top: 100px;
+}
+
+
+
 .text_h1 {
   transform: scaleX(-1);
+  color: #FFF;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  padding-left: 40px;
+}
+
+.h1 {
   color: #FFF;
   font-family: Montserrat;
   font-style: normal;
@@ -33,6 +47,7 @@
   background: #393;
   border: none;
   color: white;
+  margin-top: 50px;
 }
 
 .textCategories {
@@ -50,7 +65,7 @@
 }
 
 .btnCategories {
-  display: flex;
+
   justify-self: center;
   align-self: center;
   margin-right: 40px;
@@ -59,7 +74,8 @@
   padding: 8px 16px;
   border-radius: var(--radius-small, 6px);
   border: 1px solid var(--grey-divider, #DDD);
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-left: 50px;
 }
 
 .link {
@@ -96,14 +112,14 @@
     padding-top: 20px;
   }
 
-@media(max-width : 800px){
-  .ItemsCategories {
-   display: grid;
-   grid-template-columns: repeat(1,1fr);
-margin-left: 30px;
-  }
+  @media(max-width : 800px) {
+    .ItemsCategories {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-left: 30px;
+    }
 
-}
+  }
 
   .btnCategories {
     margin-top: 23px;

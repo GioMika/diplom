@@ -4,7 +4,6 @@ import { filterPrice } from "../../../store/allSlices/allProductsSlice";
 import { useDispatch } from "react-redux";
 
 
-
 function FilterForm() {
   const dispatch = useDispatch();
   const [minPrice, setMinPrice] = useState(0);

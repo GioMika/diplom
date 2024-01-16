@@ -12,7 +12,6 @@ import ProductsByCategori from "./pages/ProductsByCategori/index.jsx"
 import SingleProductsPage from "./pages/SingleProductsPage/index.jsx";
 
 function App() {
-
   return (
     <div>
       <Header />
@@ -26,7 +25,7 @@ function App() {
         <Route path="/categories/:id" element={<ProductsByCategori />} />
         <Route path="/products/:product_id" element={<SingleProductsPage/>} />
       </Routes>
-      <Footer />
+      <Footer/>
     </div>
   );
 }

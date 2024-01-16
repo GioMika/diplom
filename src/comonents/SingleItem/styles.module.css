@@ -6,17 +6,15 @@
   gap: 5px;
   flex-wrap: wrap;
 }
-
-
-
-
+.link {
+  text-decoration: none;
+}
 
 .localCount {
   width: 30px;
 display: flex;
 justify-content: center;
 }
-
 
 .btnTools {
   width: 200px;

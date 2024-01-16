@@ -1,87 +1,54 @@
 import { useForm } from "react-hook-form";
 import flowers from "./assest/flowers.svg";
 import styles from "./inputDiscount.module.css";
+import {phoneValidation,emailValidation,} from "../../utils/validation";
+import ValidationError from "../Error";
+import { useDispatch, useSelector } from "react-redux";
+import { salePost } from "../../store/allSlices/salePost";
+
 
 function InputDiscount() {
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors },
-  } = useForm();
+const dispatch = useDispatch()
 
-  const getData = (data) => {
-    console.log(data);
-    reset();
-  };
+const getDataFromInputs = (data) => {
+ 
+  dispatch(salePost(data))
+  reset();
+}
 
-  console.log(errors);
-
+  const {register,handleSubmit,reset,formState: { errors },} = useForm({
+    mode: "all",
+  });
   return (
     <section className={styles.section}>
       <h2 className={styles.text_h2}>5% off on the first order</h2>
       <div className={styles.all_elements}>
         <img className={styles.image} src={flowers} alt="flowers" />
 
-        <form onSubmit={handleSubmit(getData)} className={styles.all_inputs}>
+        <form onSubmit={handleSubmit(getDataFromInputs )} className={styles.all_inputs}>
           <input
-            {...register("name", {
-              required: "fill in the name field",
-              maxLength: {
-                value: 20,
-                message: 'Max symbol 20 ',
-              },
-              minLength: {
-                minLength:2,
-                message: 'Min symbol 20',
-              }
-            })}
+            {...register("name", ValidationError)}
             placeholder="Name"
             className={styles.input}
             type="text"
           />
-          {errors.name && (
-            <p style={{ color: "rgb(229, 241, 4)", fontSize: "26px" }}>
-              {errors.name.message}
-            </p>
-          )}
+          <ValidationError keyName={errors.name} message={errors?.name?.message}/>
+
 
           <input
-            {...register("numberPhone", {
-              required: "fill in the phone number field",
-              maxLength: {
-                value:20,
-                message: 'Max symbol 20 '
-              },
-              minLength: {
-                minLength:2,
-                message: 'Min symbol 20'
-              }
-
-            })}
-            // placeholder="Phone number"
+            {...register("numberPhone", phoneValidation)}
+            placeholder="Phone number"
             className={styles.input}
-            type="text"
+            type="number"
           />
-          {errors.numberPhone && (
-            <p style={{ color: "rgb(229, 241, 4)", fontSize: "26px" }}>
-              {errors.numberPhone.message}
-            </p>
-          )}
-
+           <ValidationError keyName={errors.numberPhone} message={errors?.numberPhone?.message}/>
           <input
-            {...register("email", {
-              required: "fill in the email field",
-            })}
+            {...register("email", emailValidation)}
             placeholder="Email"
             className={styles.input}
             type="text"
           />
-          {errors.email && (
-            <p style={{ color: "rgb(229, 241, 4)", fontSize: "26px" }}>
-              {errors.email.message}
-            </p>
-          )}
+       <ValidationError keyName={errors.email} message={errors?.email?.message}/>
 
           <input
             type="submit"

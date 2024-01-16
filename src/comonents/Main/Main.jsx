@@ -8,15 +8,14 @@ function Main() {
     <main className={styles.main}>
       <div className={styles.img}>
         <div className={styles.text_h1}>
-          <h1>Amazing Discounts on Garden Products!</h1>
-        
+          <h1 className={styles.h1}>Amazing Discounts on Garden Products!</h1>
+          <Link className={styles.link} to={'/cart'}>
           <button className={styles.btn}>Check out</button>
-          
+          </Link>
         </div>
       </div>
       <div className={styles.elementsCategories}>
         <div className={styles.ItemsCategories}>
-        <h2 className={styles.textCategories}>Categories</h2>
         <Link className={styles.link} to={'/categories'}>
         <button className={styles.btnCategories}>All categories </button>
         </Link>

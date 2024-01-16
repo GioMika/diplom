@@ -1,24 +1,28 @@
 .checkBox {
-  display: flex;
+  display: grid;
   gap: 20px;
   align-items: center;
-  /* margin-bottom: 30px; */
+  margin-bottom: 30px;
   color: var(--txt-black, #282828);
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 130%;
-  /* margin-left: 40px; */
+  margin-left: 3vw;
 }
 
 .check {
   display: flex;
   width: 36px;
   height: 36px;
-  align-items: center;
   gap: 10px;
-
-  border-radius: var(--radius-small, 6px);
+  border-radius: 0.4px solid red;
   border: 1px solid var(--grey-divider, #ddd);
+}
+
+.text {
+  color: var(--txt-black, #282828);
+font-family: Montserrat;
+font-size: 20px;
 }

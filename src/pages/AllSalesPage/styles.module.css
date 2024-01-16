@@ -1,0 +1,21 @@
+
+.formsElements {
+  padding-top: 120px;
+  text-align: center;
+}
+
+
+.forms {
+  display: flex;
+padding-top: 50px;
+  gap: 10vw;
+  padding-left: 50px;
+}
+h1{
+  color: var(--txt-black, #282828);
+font-family: Montserrat;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: 110%;
+}

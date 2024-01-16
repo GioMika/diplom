@@ -5,8 +5,6 @@ import { addItemCart } from "../../store/allSlices/cartSlice";
 import { useEffect } from "react";
 import allProducts from "../../request/allProducts";
 
-
-
 function Sales() {
   const salesItems = useSelector((state) => state.products.list);
   const productDiscount = salesItems.filter((item) => {
@@ -49,7 +47,7 @@ function Sales() {
            
               <button
                 className={styles.addProducts}
-                onClick={() => dispatch(addItemCart(elem))}
+                onClick={() => dispatch(addItemCart({ count: 1, ...elem }))}
               >
                 ADD TO CART
               </button>

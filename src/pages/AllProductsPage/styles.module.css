@@ -1,16 +1,42 @@
+.forms {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-top: 30px;
+  padding-left: 7vw;
+  margin-bottom: 40px;
+}
+
 .text_H1 {
   display: flex;
   justify-content: center;
-  padding-top: 120px;
+  padding: 40px;
   text-align: center;
   color: var(--txt-black, #282828);
   font-family: Montserrat;
   font-size: 64px;
-  font-style: normal;
   font-weight: 700;
+  padding-left: 50px;
 }
 
-.forms {
+.btns {
   display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 140px;
 }
 
+.btn {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: var(--radius-small, 6px);
+  border: 1px solid var(--grey-divider, #ddd);
+}
+
+.link {
+  text-decoration: none;
+}

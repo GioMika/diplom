@@ -3,6 +3,8 @@ import { useState } from "react";
 import styles from "./styles.module.css";
 import { addItemCart } from "../../store/allSlices/cartSlice";
 import { countPlus } from "../../store/allSlices/cartSlice";
+import { Link } from "react-router-dom";
+
 
 function SingleItem({ id, title, price, discont_price, description, image }) {
   const [localCount, setLocalCount] = useState(1);
@@ -43,10 +45,24 @@ function SingleItem({ id, title, price, discont_price, description, image }) {
   return (
     <div className={styles.main}>
       <div className={styles.allButtons}>
+        
+        <Link className={styles.link} to={'/'}>
         <button className={styles.btnLink}>Main page</button>
+        </Link>
+
+        <Link className={styles.link} to={'/categories'}>
         <button className={styles.btnLink}>Categories</button>
-        <button className={styles.btnTools}>Tools and equipment</button>
-        <button className={styles.btnLink}>Secateurs</button>
+        </Link>
+
+        <Link className={styles.link} to={'/sale'}>
+        <button className={styles.btnTools}>Discount items</button>
+        </Link>
+
+        <Link className={styles.link} to={'/products'}>
+        <button className={styles.btnLink}>Products</button>
+        </Link>
+
+
       </div>
 
       <div className={styles.images}>
@@ -57,9 +73,11 @@ function SingleItem({ id, title, price, discont_price, description, image }) {
         />
       </div>
       <div className={styles.btns}>
+       
         <button className={styles.btn} onClick={increment}>
           +
         </button>
+    
         <h4 className={styles.localCount}>{localCount}</h4>
         <button className={styles.btn} onClick={decrementCount}>
           -
