@@ -1,3 +1,9 @@
+.link {
+  text-decoration: none;
+  color: rgb(37, 35, 35);
+}
+
+
 .sectionAllProduscts {
   display: flex;
   justify-items: center;

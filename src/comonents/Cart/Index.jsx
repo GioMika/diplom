@@ -2,7 +2,6 @@ import { useSelector } from "react-redux";
 import CartItem from "../CartItem/Index";
 import styles from "./styles.module.css"
 import { useEffect } from "react";
-import CartPage from "../../pages/CartPage";
 
 
 function Cart() {

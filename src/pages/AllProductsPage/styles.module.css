@@ -1,10 +1,10 @@
 .forms {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
   padding-top: 30px;
-  padding-left: 7vw;
-  margin-bottom: 40px;
+padding: 30px;
+  margin-bottom: 30px;
 }
 
 .text_H1 {

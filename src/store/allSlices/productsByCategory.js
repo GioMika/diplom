@@ -25,6 +25,36 @@ const productByCategory = createSlice({
       } else {
         state.list.data.sort((a, b) => a.id - b.id)
       }
+    },
+
+    filterPriceCat(state,action) {
+      const {minPrice,maxPrice} = action.payload
+      state.list.data.map((elem) => {
+        let actualPrice = elem.discont_price || elem.price;
+        if(actualPrice >= minPrice && actualPrice <= maxPrice){
+        elem.showProductFilter = true;
+        }else{
+          elem.showProductFilter = false
+        }
+        return elem
+      }) 
+    },
+
+    discountProductsCat(state, action) {
+      if (action.payload) {
+        state.list.data.map((elem) => {
+          if (elem.discont_price === null) {
+            elem.showProduct = false
+          } return elem
+        })
+
+        
+      } else {
+        state.list.data.map((elem) => {
+          elem.showProduct = true
+          return elem
+        })
+      }
     }
   },
 
@@ -34,17 +64,19 @@ const productByCategory = createSlice({
         state.status = 'pandung'
       })
       .addCase(getProductsBycategory.fulfilled, (state, action) => {
-      const {data} = action.payload
+      state.list = action.payload    
+      const {data} =  action.payload
         state.list.data = data.map((elem) => ({...elem, showProduct: true ,
           showProductFilter:true}))
       })
+    
       .addCase(getProductsBycategory.rejected, (state) => {
         state.status = 'rejected'
       })
   }
 })
 
-export const {sortProductsCat} = productByCategory.actions
+export const {sortProductsCat,discountProductsCat,filterPriceCat} = productByCategory.actions
 export default productByCategory.reducer;
 
 

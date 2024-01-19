@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 import styles from "./styles.module.css";
 import {
   countPlus,
@@ -6,10 +7,14 @@ import {
 } from "../../store/allSlices/cartSlice";
 import { useDispatch } from "react-redux";
 
+
+
 function CartItem({ image, title, id, price, count, discont_price }) {
   let sumCount = discont_price === null ? count * price : count * discont_price;
 
   const dispatch = useDispatch();
+
+
 
 
   
@@ -67,6 +72,9 @@ function CartItem({ image, title, id, price, count, discont_price }) {
         </div>
       </div>
     </div>
+
+
+ 
   );
 }
 

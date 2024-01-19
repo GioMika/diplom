@@ -1,21 +1,27 @@
 .allElements {
-  width:400px;
+  width: 400px;
   border-radius: 20px;
   padding: 20px;
   border-radius: 12px;
   border: 1px solid var(--grey-divider, #ddd);
-margin-left: 30px;
-padding-left: 50px;
-margin-bottom: 20px;
-height: 67vh;
+  margin-left: 30px;
+  padding-left: 50px;
+  margin-bottom: 20px;
+
 }
-.main{
-margin: 0 auto;
+
+.main {
+  margin: 0 auto;
 }
 
 .counrText {
   margin-top: 30px;
 }
+
+.prise_sale {
+  padding-top: 30px;
+}
+
 
 .btn {
   display: flex;
@@ -23,7 +29,7 @@ margin: 0 auto;
   height: 30px;
   justify-content: center;
   align-items: center;
-margin-top: 30px;
+  margin-top: 30px;
   border-radius: var(--radius-small, 6px);
   border: 1px solid var(--grey-divider, #ddd);
 }
@@ -31,7 +37,7 @@ margin-top: 30px;
 .elementsCounter {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 10px;
   align-items: center;
   justify-content: space-around;
   border-radius: 5%;
@@ -40,7 +46,7 @@ margin-top: 30px;
 }
 
 
-@media(max-width:700px){
+@media(max-width:700px) {
   .elementsCounter {
     display: flex;
     align-items: center;
@@ -50,18 +56,16 @@ margin-top: 30px;
   }
 
   .allElements {
-margin-left: 285px;
-height: 70vh;
+    padding-top: 30px;
+    margin-left: 233px;
+    margin-top: 40px;
   }
 }
-
-
-
 
 .imgList {
   width: 300px;
   height: 100%;
-border-radius: 20px;
+  border-radius: 20px;
 }
 
 .deletedProducts {
@@ -72,7 +76,7 @@ border-radius: 20px;
 .product_prise {
   width: 300px;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   align-items: center;
   justify-content: center;

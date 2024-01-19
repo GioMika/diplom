@@ -22,7 +22,6 @@ function ProductsByCategori() {
   const getByCategories = useSelector((state) => state.productByCategory.list);
   // const categoryTitle = getByCategories.category;
   const getBycategoryesData = getByCategories?.data || [];
-
   return (
     <div>
       <div className={styles.elementsForms}>

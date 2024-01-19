@@ -1,11 +1,12 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Inter:wght@100;200;400&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .footer {
   margin-top: 50px;
 }
 
-
-
-@media (max-width:600px) {
-
+@media (max-width: 600px) {
   .social_elements {
     display: flex;
     flex-wrap: wrap;
@@ -21,10 +22,7 @@
   .text_contact {
     text-align: center;
   }
-
 }
-
-
 
 .text_contact {
   color: var(--txt-black, #282828);
@@ -44,10 +42,9 @@
   padding: 40px;
 }
 
-
 .number_phone {
   border-radius: var(--radius-big, 12px);
-  background: var(--light-grey, #F1F3F4);
+  background: var(--light-grey, #f1f3f4);
   display: flex;
   padding: 32px;
   flex-direction: column;
@@ -69,18 +66,18 @@
 
 .sotial_img {
   display: flex;
-  width: 548px;
+  width: 700px;
   padding: 32px;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
   align-self: stretch;
   border-radius: var(--radius-big, 12px);
-  background: var(--light-grey, #F1F3F4);
+  background: var(--light-grey, #f1f3f4);
 }
 
 .p_phone {
-  color: var(--txt-grey, #8B8B8B);
+  color: var(--txt-grey, #8b8b8b);
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
@@ -89,7 +86,7 @@
 }
 
 .p_social {
-  color: var(--txt-grey, #8B8B8B);
+  color: var(--txt-grey, #8b8b8b);
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
@@ -97,20 +94,16 @@
   line-height: 130%;
 }
 
-
 .img_footer {
   display: flex;
   gap: 16px;
 }
-
 
 .footer_adress {
   display: flex;
   gap: 32px;
   padding: 40px;
 }
-
-
 
 .adress {
   display: flex;
@@ -123,17 +116,15 @@
 
   width: 50vw;
   border-radius: var(--radius-big, 12px);
-  background: var(--light-grey, #F1F3F4);
+  background: var(--light-grey, #f1f3f4);
 }
-
 
 .working {
   border-radius: var(--radius-big, 12px);
-  background: var(--light-grey, #F1F3F4);
-
+  background: var(--light-grey, #f1f3f4);
 
   display: flex;
-  width: 548px;
+  width: 700px;
   padding: 32px;
   flex-direction: column;
   align-items: flex-start;
@@ -141,28 +132,23 @@
   align-self: stretch;
 }
 
-
-
-
 .p_working {
-  color: var(--txt-grey, #8B8B8B);
+  color: var(--txt-grey, #8b8b8b);
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 130%;
 }
-
 
 .p_adress {
-  color: var(--txt-grey, #8B8B8B);
+  color: var(--txt-grey, #8b8b8b);
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 130%;
 }
-
 
 .p_adress_berlin {
   color: var(--txt-black, #282828);
@@ -174,7 +160,6 @@
   min-width: 200px;
   text-decoration: none;
 }
-
 
 .p_hours {
   color: var(--txt-black, #282828);

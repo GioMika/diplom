@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 import Cart from "../../comonents/Cart/Index";
 import styles from "./styles.module.css";
 import { useForm } from "react-hook-form";
@@ -7,26 +8,33 @@ import {
   phoneValidation,
 } from "../../utils/validation";
 import ValidationError from "../../comonents/Error";
-import { useSelector,useDispatch  } from "react-redux";
-import {orderPost }from "../../store/allSlices/orderPost";
-
+import { useSelector, useDispatch } from "react-redux";
+import { orderPost } from "../../store/allSlices/orderPost";
+import { useEffect, useState } from "react";
+import { resetCart } from "../../store/allSlices/cartSlice";
+import { resetOrderStatus } from "../../store/allSlices/orderPost";
 
 function CartPage() {
+  let status = useSelector((state) => state.order.status);
 
-
-
-const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const getDataFromInputs = (data) => {
     reset();
     dispatch(orderPost(data));
-   
-       
-}
+  };
 
-  
+  const [isModalOpen, setModalOpen] = useState(false);
 
+  const handleCloseModal = () => {
+    setModalOpen(false);
+    dispatch(resetOrderStatus());
+    dispatch(resetCart());
+  };
 
-  
+  useEffect(() => {
+    setModalOpen(true);
+  }, [status]);
+
   const sumCunt = useSelector((state) => state.cart);
 
   const sum = sumCunt.reduce((acum, elem) => {
@@ -34,7 +42,7 @@ const dispatch = useDispatch()
       elem.discont_price !== null
         ? (acum += elem.discont_price && elem.discont_price * elem.count)
         : (acum += elem.price && elem.price * elem.count);
-    return res  ;
+    return res;
   }, 0);
 
   const {
@@ -46,20 +54,14 @@ const dispatch = useDispatch()
     mode: "all",
   });
 
-  const getData = (data) => {
-    console.log(data);
-    reset();
-  };
-
   return (
     <div className={styles.carItem}>
       <div className={styles.cart}>
         <Cart />
       </div>
-
       <div className={styles.formt_elemens}>
         <p className={styles.paragraph}>Order details</p>
-
+        
         <div className={styles.counter}>
           <p className={styles.items}>item</p>
           {sumCunt.length === 0 ? (
@@ -73,12 +75,13 @@ const dispatch = useDispatch()
 
         <div className={styles.total}>
           <p className={styles.items}>total</p>
-          <p className={styles.sumPrice}>
-            {sum === 0 ? '' : sum}
-            </p>
+          <p className={styles.sumPrice}>{sum === 0 ? "" : sum}</p>
         </div>
 
-        <form onSubmit={handleSubmit(getDataFromInputs)} className={styles.all_inputs}>
+        <form
+          onSubmit={handleSubmit(getDataFromInputs)}
+          className={styles.all_inputs}
+        >
           <input
             {...register("name", nameValidation)}
             placeholder="Name"
@@ -88,6 +91,7 @@ const dispatch = useDispatch()
           <ValidationError
             keyName={errors.name}
             message={errors?.name?.message}
+            className={styles.messag}
           />
 
           <input
@@ -99,6 +103,7 @@ const dispatch = useDispatch()
           <ValidationError
             keyName={errors.numberPhone}
             message={errors?.numberPhone?.message}
+            className={styles.messag}
           />
           <input
             {...register("email", emailValidation)}
@@ -118,6 +123,25 @@ const dispatch = useDispatch()
             value={"Order"}
           />
         </form>
+
+        <div
+          className={
+            status === "fulfilled" && isModalOpen
+              ? styles.modal_container
+              : styles.modal_close
+          }
+        >
+          {isModalOpen && (
+            <div className={styles.modal}>
+              <h4  className={styles.delete} onClick={handleCloseModal}>X</h4>
+              <h2>Congratulations</h2>
+              <p>
+                Your order has been successfully placed on the website. A
+                manager will contact you shortly to confirm your order.
+              </p>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

@@ -13,12 +13,14 @@ try{
 }
 })
 
-export const getProductsBycategory = createAsyncThunk('productByCategory/getProductsBycategory', async(categoryId) => {
+export const getProductsBycategory = createAsyncThunk
+ ('productByCategory/getProductsBycategory',
+  async(categoryId) => {
   const url = `http://localhost:3333/categories/${categoryId}`
   try{
-    const respons = await fetch(url)
-   const data = await respons.json()
-   return data
+    const response = await fetch(url)
+   const data = await response.json()
+   return  data;
   }catch(error){
    throw error
   }

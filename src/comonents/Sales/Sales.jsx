@@ -1,21 +1,21 @@
 import { useDispatch, useSelector } from "react-redux";
 import styles from "./styles.module.css";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { addItemCart } from "../../store/allSlices/cartSlice";
 import { useEffect } from "react";
 import allProducts from "../../request/allProducts";
 
 function Sales() {
   const salesItems = useSelector((state) => state.products.list);
-  const productDiscount = salesItems.filter((item) => {
-    return item.discont_price;
-  }).slice(0,4);
-
+  const productDiscount = salesItems
+    .filter((item) => {
+      return item.discont_price;
+    })
+    .slice(0, 4);
 
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(allProducts());
-
   }, [dispatch]);
 
   return (
@@ -35,8 +35,7 @@ function Sales() {
                     " %"
                   : null}
               </p>
-           
-           
+
               <Link to={`/products/${elem.id}`}>
                 <img
                   className={styles.imgList}
@@ -44,7 +43,7 @@ function Sales() {
                   alt="phot"
                 />
               </Link>
-           
+
               <button
                 className={styles.addProducts}
                 onClick={() => dispatch(addItemCart({ count: 1, ...elem }))}
