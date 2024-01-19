@@ -4,9 +4,9 @@ function ValidationError({ keyName, message }) {
   return (
     <>
       {keyName &&
-        <p style={{ color: "rgb(229, 241, 4)", fontSize: "26px" }}>
+        <p style={{ color: 'red', fontSize: "22px", paddingLeft: '15px' }}>
           {message}
-     </p>
+        </p>
       }
     </>
   )

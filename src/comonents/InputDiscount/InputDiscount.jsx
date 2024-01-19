@@ -1,9 +1,9 @@
 import { useForm } from "react-hook-form";
 import flowers from "./assest/flowers.svg";
 import styles from "./inputDiscount.module.css";
-import {phoneValidation,emailValidation,} from "../../utils/validation";
+import {phoneValidation,emailValidation,nameValidation} from "../../utils/validation";
 import ValidationError from "../Error";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { salePost } from "../../store/allSlices/salePost";
 
 
@@ -27,7 +27,7 @@ const getDataFromInputs = (data) => {
 
         <form onSubmit={handleSubmit(getDataFromInputs )} className={styles.all_inputs}>
           <input
-            {...register("name", ValidationError)}
+            {...register("name", nameValidation)}
             placeholder="Name"
             className={styles.input}
             type="text"

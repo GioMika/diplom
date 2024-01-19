@@ -1,3 +1,7 @@
+body {
+  background-color: #f4f8fa;
+}
+
 .carItem {
   padding-top: 150px;
   display: flex;
@@ -35,7 +39,6 @@
   font-style: normal;
   font-weight: 700;
   line-height: 110%;
-
 }
 
 .input {
@@ -49,7 +52,7 @@
   height: 50px;
   margin-top: 20px;
 
-  color: var(--txt-white, #FFF);
+  color: var(--txt-white, #fff);
   text-align: center;
   font-family: Montserrat;
   font-size: 20px;
@@ -57,10 +60,9 @@
   font-weight: 600;
 }
 
-
 .all_inputs {
   height: 100%;
-  background-color: #b4cfdf;
+  background-color: #031c2b;
   border-radius: 20px;
   padding-top: 50px;
   margin: 0 auto;
@@ -72,7 +74,7 @@
 .formt_elemens {
   width: 500px;
   border-radius: var(--radius-big, 12px);
-  background: var(--light-grey, #F1F3F4);
+  background: var(--light-grey, #f1f3f4);
   height: 100%;
   padding-top: 30px;
   margin-top: 70px;
@@ -85,7 +87,7 @@
 }
 
 .items {
-  color: var(--txt-grey, #8B8B8B);
+  color: var(--txt-grey, #8b8b8b);
   font-family: Montserrat;
   font-size: 30px;
   font-style: normal;
@@ -103,29 +105,25 @@
   line-height: 110%;
   padding-left: 10px;
   padding-bottom: 30px;
-
 }
 
-@media(max-width:700px) {
-.modal {
-margin-left: -515px;
-display: grid;
-gap: 10px;
-}
-.delete {
-  color: red;
-  padding-left: 320px;
-  padding-top: -90px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-
+@media (max-width: 700px) {
+  .modal {
+    margin-left: -515px;
+    display: grid;
+    gap: 10px;
+  }
+  .delete {
+    color: red;
+    padding-left: 320px;
+    padding-top: -90px;
+    font-size: 20px;
+    cursor: pointer;
+  }
 
   .submit {
     margin-top: 20px;
   }
-
 
   .carItem {
     display: block;
@@ -182,12 +180,6 @@ gap: 10px;
   }
 }
 
-.section {
-  border-radius: var(--radius-big, 12px);
-  background: linear-gradient(261deg, #0B710B 32.63%, #393 98.96%);
-  margin-top: 70px;
-}
-
 .all_elements {
   width: 100%;
   display: flex;
@@ -199,16 +191,14 @@ gap: 10px;
   max-width: 100%;
 }
 
-
 .all_inputs {
   display: flex;
   flex-direction: column;
   width: 316px;
   gap: 16px;
-  color: rgb(229, 241, 4);
 }
 
-@media(max-width:700px) {
+@media (max-width: 700px) {
   .all_elements {
     flex-direction: column;
     gap: 5px;
@@ -218,7 +208,6 @@ gap: 10px;
     margin-top: 70px;
   }
 }
-
 
 .input {
   background-color: transparent;
@@ -238,7 +227,7 @@ gap: 10px;
   align-items: center;
   gap: 10px;
   border-radius: var(--radius-small, 6px);
-  background: var(--white, #FFF);
+  background: var(--white, #fff);
   border: none;
 
   color: var(--txt-black, #282828);

@@ -3,7 +3,7 @@
 .section {
   display: grid;
   border-radius: var(--radius-big, 12px);
-  background: linear-gradient(261deg, #0B710B 32.63%, #393 98.96%);
+  background: linear-gradient(261deg, #87f787 32.63%, #393 98.96%);
 margin-top:70px ;
 }
 
@@ -42,7 +42,7 @@ margin-top:70px ;
   flex-direction: column;
   width: 316px;
   gap: 16px;
-  color: rgb(229, 241, 4);
+  color: rgb(33, 34, 12);
 }
 
 @media(max-width:700px){
@@ -67,7 +67,7 @@ margin-top:70px ;
   border: 1px solid white;
   border-radius: 6px;
   height: 38px;
-  color: rgb(190, 204, 121);
+  color: rgba(251, 6, 2, 0.605);
   font-size: 20px;
   padding-left: 32px;
 }
@@ -94,5 +94,5 @@ margin-bottom: 10px;
 }
 
 .input::placeholder {
-  color: rgb(81, 64, 64);
+  color: rgb(41, 93, 2);
 }
