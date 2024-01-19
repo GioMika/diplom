@@ -1,21 +1,44 @@
-
 .formsElements {
   padding-top: 120px;
   text-align: center;
 }
 
-
 .forms {
   display: flex;
-padding-top: 50px;
+  padding-top: 50px;
   gap: 10vw;
   padding-left: 50px;
 }
-h1{
+h1 {
   color: var(--txt-black, #282828);
-font-family: Montserrat;
-font-size: 64px;
-font-style: normal;
-font-weight: 700;
-line-height: 110%;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+
+.btns {
+  display: flex;
+  gap: 20px;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.btn {
+  display: flex;
+padding: 8px 16px;
+justify-content: center;
+align-items: center;
+
+
+gap: 10px;
+  border-radius: var(--radius-small, 6px);
+border: 1px solid var(--grey-divider, #DDD);
+}
+
+.link {
+  text-decoration: none;
 }
