@@ -11,20 +11,20 @@ function Header() {
     <header className={styles.header}>
       <Link className={styles.link} to="/">
         {" "}
-        <img src={logo} alt="logo" />
+        <img className={styles.logo} src={logo} alt="logo" />
       </Link>
       <div className={styles.paragraph}>
         <Link className={styles.link} to="/">
-          <p>Main Page</p>
+          <p className={styles.paragraph}>Main Page</p>
         </Link>
         <Link className={styles.link} to="/categories">
-          <p>Categories</p>
+          <p className={styles.paragraph}>Categories</p>
         </Link>
         <Link className={styles.link} to="/products">
-          <p>All products</p>
+          <p className={styles.paragraph}>All products</p>
         </Link>
         <Link className={styles.link} to="/sale">
-          <p>All sales</p>
+          <p className={styles.paragraph}>All sales</p>
         </Link>
       </div>
 
@@ -38,7 +38,7 @@ function Header() {
             </p>
           )}
         </div>
-        <img src={card} alt="card" />
+        <img className={styles.logo} src={card} alt="card" />
       </Link>
     </header>
   );

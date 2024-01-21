@@ -4,7 +4,6 @@
   padding: 20px;
   border-radius: 12px;
   border: 1px solid var(--grey-divider, #ddd);
-  margin-left: 30px;
   padding-left: 50px;
   margin-bottom: 20px;
 
@@ -57,7 +56,9 @@
 
   .allElements {
     padding-top: 30px;
-    margin-left: 233px;
+justify-content: center;
+margin-left: 46vw;
+    /* margin-left: 233px; */
     margin-top: 40px;
   }
 }

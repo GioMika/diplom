@@ -11,13 +11,8 @@ import { useDispatch } from "react-redux";
 
 function CartItem({ image, title, id, price, count, discont_price }) {
   let sumCount = discont_price === null ? count * price : count * discont_price;
-
   const dispatch = useDispatch();
 
-
-
-
-  
   return (
     <div className={styles.main}>
       <div className={styles.allElements}>

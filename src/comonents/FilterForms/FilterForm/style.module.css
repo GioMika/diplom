@@ -21,3 +21,12 @@ font-style: normal;
 font-weight: 600;
 line-height: 130%;
 }
+
+@media(max-width:600px){
+.priceText {
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+
+}

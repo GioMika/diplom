@@ -11,19 +11,19 @@
   padding-top: 100px;
 }
 
-
-
 .text_h1 {
   transform: scaleX(-1);
-  color: #FFF;
+  color: #fff;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
   padding-left: 40px;
+
+  margin-top: -60px;
 }
 
 .h1 {
-  color: #FFF;
+  color: #fff;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
@@ -33,9 +33,6 @@
 .text_h1 h1 {
   font-size: 96px;
 }
-
-
-
 
 .btn {
   display: flex;
@@ -48,6 +45,7 @@
   border: none;
   color: white;
   margin-top: 50px;
+  margin-left: 35px;
 }
 
 .textCategories {
@@ -55,17 +53,13 @@
   padding-top: 20px;
 }
 
-
-
 .line {
   width: 100%px;
   border: 1px solid red;
   position: relative;
-
 }
 
 .btnCategories {
-
   justify-self: center;
   align-self: center;
   margin-right: 40px;
@@ -73,7 +67,7 @@
   height: 36px;
   padding: 8px 16px;
   border-radius: var(--radius-small, 6px);
-  border: 1px solid var(--grey-divider, #DDD);
+  border: 1px solid var(--grey-divider, #ddd);
   margin-top: 50px;
   margin-left: 50px;
 }
@@ -85,7 +79,6 @@
 .ItemsCategories {
   display: flex;
   justify-content: space-between;
-
 }
 
 .textCategories {
@@ -97,13 +90,17 @@
   line-height: 110%;
   justify-content: center;
   align-items: center;
-
 }
 
-@media (max-width: 850px) {
+@media (max-width: 950px) {
   .text_h1 h1 {
     font-size: 66px;
+   margin-top: -70px;
+   font-size: 60px;
+  }
 
+  .text_h1 {
+    margin-top: -40px;
   }
 
   .ItemsCategories {
@@ -112,13 +109,19 @@
     padding-top: 20px;
   }
 
-  @media(max-width : 800px) {
+  @media (max-width: 600px) {
     .ItemsCategories {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       margin-left: 30px;
     }
 
+    .text_h1 h1 {
+      font-size: 46px;
+    }
+    .btn{
+     margin-left: 35px;
+    }
   }
 
   .btnCategories {

@@ -26,3 +26,11 @@
 font-family: Montserrat;
 font-size: 20px;
 }
+
+@media(max-width:600px){
+  .text{
+    width: 110px;
+    font-size: 15px;
+    margin-left: -10px;
+  }
+}
