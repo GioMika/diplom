@@ -75,9 +75,9 @@ function CartPage() {
 
         <div className={styles.total}>
           <p className={styles.items}>total</p>
-          <p className={styles.sumPrice}>{sum === 0 ? "" : sum}</p>
+          <p className={styles.sumPrice}>{sum === 0 ? "" : sum.toFixed(2)}</p>
         </div>
-
+        
         <form
           onSubmit={handleSubmit(getDataFromInputs)}
           className={styles.all_inputs}

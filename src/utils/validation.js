@@ -1,6 +1,5 @@
 
 
-
 export const nameValidation = {
   
   required: "fill in the name field",
