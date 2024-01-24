@@ -6,8 +6,15 @@
   width: 100%;
   background-color: rgb(250, 249, 248);
   height: 100px;
-  opacity: 0.98;
   z-index: 1;
+}
+
+.timer {
+  color: rgba(65, 61, 61, 0.468);
+  position: absolute;
+  padding-left: 80px;
+  font-size: 10px;
+  margin-top: -80px;
 }
 
 .link {
@@ -20,12 +27,10 @@
   line-height: 130%;
 }
 
-
 .paragraph {
   display: flex;
   gap: 100px;
 }
-
 .count {
   width: 50px;
   height: 30px;
@@ -49,10 +54,14 @@
     font-size: 15px;
   }
 
+  .timer {
+    padding-top: 75px;
+    padding-left: 0px;
+  }
+
   .logo {
     width: 50px;
   }
-
   .count {
     width: 50px;
     height: 30px;
@@ -62,13 +71,9 @@
   }
 
 }
-
-
 .link:hover {
   color: rgb(12, 145, 145);
 }
-
-
 
 .countNone {
   display: none;
