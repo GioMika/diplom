@@ -1,5 +1,19 @@
 import { createSlice } from "@reduxjs/toolkit";
-import allProducts from "../../request/allProducts";
+import { createAsyncThunk } from "@reduxjs/toolkit";
+
+
+
+export const allProducts = createAsyncThunk('products/allProducts ', async () => {
+  const url = 'http://localhost:3333/products/all'
+  try {
+    const respons = await fetch(url)
+    const data = await respons.json()
+    return data
+  } catch (error) {
+    throw error
+  }
+})
+
 
 const productsSlice = createSlice({
   name: 'products',
@@ -7,6 +21,7 @@ const productsSlice = createSlice({
     status: null,
     list: []
   },
+
   reducers: {
     sortProducts(state, action) {
       if (action.payload === "low-high") {
@@ -24,17 +39,17 @@ const productsSlice = createSlice({
       }
     },
 
-    filterPrice(state,action) {
-      const {minPrice,maxPrice} = action.payload
+    filterPrice(state, action) {
+      const { minPrice, maxPrice } = action.payload
       state.list.map((elem) => {
         let actualPrice = elem.discont_price || elem.price;
-        if(actualPrice >= minPrice && actualPrice <= maxPrice){
-        elem.showProductFilter = true;
-        }else{
+        if (actualPrice >= minPrice && actualPrice <= maxPrice) {
+          elem.showProductFilter = true;
+        } else {
           elem.showProductFilter = false
         }
         return elem
-      }) 
+      })
     },
 
     discountProducts(state, action) {
@@ -61,13 +76,15 @@ const productsSlice = createSlice({
       })
       .addCase(allProducts.fulfilled, (state, action) => {
         state.status = 'fulfilld'
-        state.list = action.payload.map((elem) => ({ ...elem, showProduct: true,
-        showProductFilter:true}))
+        state.list = action.payload.map((elem) => ({
+          ...elem, showProduct: true,
+          showProductFilter: true
+        }))
       })
       .addCase(allProducts.rejected, (state) => {
         state.status = 'rejected'
       })
 })
 
-export const {filterPrice, sortProducts, discountProducts } = productsSlice.actions
+export const { filterPrice, sortProducts, discountProducts } = productsSlice.actions
 export default productsSlice.reducer

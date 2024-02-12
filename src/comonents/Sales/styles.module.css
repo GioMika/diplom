@@ -8,31 +8,19 @@
   font-style: normal;
   font-weight: 700;
   line-height: 110%;
-
 }
-
-
 .allElements {
   display: flex;
   justify-content: center;
-
   flex-wrap: wrap;
   gap: 110px;
   padding-top: 150px;
 }
-
-
-
 .imgList {
-
   width: 250px;
   height: 250px;
   border-radius: 10px;
-
 }
-
-
-
 .product_prise {
   display: flex;
   gap: 1rem;
@@ -40,13 +28,9 @@
   padding-top: 0.5rem;
   margin-bottom: 1.5rem;
 }
-
-
-
 .prise_sale_none {
   display: none;
 }
-
 .prise_sale {
   color: #282828;
   font-family: Montserrat;
@@ -55,7 +39,6 @@
   font-weight: 600;
   line-height: 110%;
 }
-
 .prise_default {
   color: #8B8B8B;
   font-family: Montserrat;
@@ -66,14 +49,9 @@
   text-decoration: line-through;
   padding-top: 15px;
 }
-
-
 .addProducts {
   display: none;
 }
-
-
-
 .imgList:hover .addProducts {
   display: block;
   cursor: pointer;
@@ -88,26 +66,19 @@
   background-color: rgba(179, 3, 255, 0.566);
   color: rgb(1, 247, 214);
   font-size: 20px;
-
 }
-
 .textTitle {
   padding-top: 15px;
 }
-
-
 .procent {
   margin-left: 20px;
   position: absolute;
   padding-left: 190px;
-
   position: absolute;
   border-radius: 20px;
   background: var(--green, #393);
-
   width: 80px;
   border-radius: 12px;
-
   padding-left: 10px;
   margin-left: 150px;
   margin-top: 30px;
@@ -118,6 +89,4 @@
   font-weight: 600;
   line-height: 130%;
   letter-spacing: 0.6px;
-
-
 }

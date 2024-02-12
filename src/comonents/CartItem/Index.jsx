@@ -8,7 +8,6 @@ import {
 import { useDispatch } from "react-redux";
 
 
-
 function CartItem({ image, title, id, price, count, discont_price }) {
   let sumCount = discont_price === null ? count * price : count * discont_price;
   const dispatch = useDispatch();
@@ -20,8 +19,7 @@ function CartItem({ image, title, id, price, count, discont_price }) {
           <p className={styles.titleText}>{title}</p>
           <h4
             style={{ cursor: "pointer" }}
-            onClick={() => dispatch(deleteItem(id))}
-          >
+            onClick={() => dispatch(deleteItem(id))}>
             X
           </h4>
         </div>
@@ -30,19 +28,16 @@ function CartItem({ image, title, id, price, count, discont_price }) {
           <img
             className={styles.imgList}
             src={`http://localhost:3333${image}`}
-            alt="no"
-          />
+            alt="no"/>
           <button
             onClick={() => dispatch(countPlus(id))}
-            className={styles.btn}
-          >
+            className={styles.btn}>
             +
           </button>
           <p className={styles.counrText}>{count}</p>
           <button
             onClick={() => dispatch(countMinus(id))}
-            className={styles.btn}
-          >
+            className={styles.btn}>
             -
           </button>
 
@@ -51,13 +46,12 @@ function CartItem({ image, title, id, price, count, discont_price }) {
               discont_price === null
                 ? styles.prise_sale_none
                 : styles.prise_sale
-            }
-          >
+            }>
             {discont_price}
           </p>
           <p
             className={
-              discont_price === null ? styles.prise_sale : styles.prise_default }>
+              discont_price === null ? styles.prise_sale : styles.prise_default}>
             {`$${price}`}
           </p>
 
@@ -67,9 +61,6 @@ function CartItem({ image, title, id, price, count, discont_price }) {
         </div>
       </div>
     </div>
-
-
- 
   );
 }
 

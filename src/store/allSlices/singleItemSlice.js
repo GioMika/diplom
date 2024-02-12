@@ -21,10 +21,6 @@ export const singleProduct = createSlice({
     list:[],
     status: null,
   },
-  reducers: {
-
-  },
-
   extraReducers: (builder) => {
     builder
       .addCase(fetchProductId.pending, (state) => {

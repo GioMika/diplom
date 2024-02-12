@@ -1,8 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import getCategories from "../../request/asynckCategories";
+import { getCategories } from "../../store/allSlices/categoriesSlice";
 import styles from "./categories.module.css";
 import { Link } from "react-router-dom";
+
 
 function Categories2({ show4 }) {
   const dispatch = useDispatch();
@@ -15,7 +16,7 @@ function Categories2({ show4 }) {
 
   return (
     <>
-    <h1 className={styles.text_h1}>Categories</h1>
+      <h1 className={styles.text_h1}>Categories</h1>
       <section className={styles.sectionBlock}>
         {showCategories.map((elem) => (
           <div
@@ -24,16 +25,14 @@ function Categories2({ show4 }) {
             style={{
               backgroundImage: `url(http://localhost:3333${elem.image})`,
               backgroundSize: "cover",
-            }}
-          >
+            }}>
             <Link className={styles.link} to={`/categories/${elem.id}`}>
               <p className={styles.textTitle}>{elem.title}</p>
             </Link>
           </div>
         ))}
       </section>
-      </>
-
+    </>
   );
 }
 

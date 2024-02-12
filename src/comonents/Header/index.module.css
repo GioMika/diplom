@@ -4,11 +4,10 @@
   align-items: center;
   position: fixed;
   width: 100%;
-  background-color: rgb(250, 249, 248);
+  background-color: white;
   height: 100px;
   z-index: 1;
 }
-
 .timer {
   color: rgba(65, 61, 61, 0.468);
   position: absolute;
@@ -16,7 +15,6 @@
   font-size: 10px;
   margin-top: -80px;
 }
-
 .link {
   text-decoration: none;
   color: var(--txt-black, #282828);
@@ -26,7 +24,6 @@
   font-weight: 500;
   line-height: 130%;
 }
-
 .paragraph {
   display: flex;
   gap: 100px;
@@ -43,8 +40,6 @@
   position: absolute;
   margin-left: 1px;
 }
-
-
 @media (max-width : 700px) {
   .paragraph {
     display: flex;
@@ -53,12 +48,10 @@
     gap: 20px;
     font-size: 15px;
   }
-
   .timer {
     padding-top: 75px;
     padding-left: 0px;
   }
-
   .logo {
     width: 50px;
   }
@@ -69,12 +62,10 @@
     margin-left: 2px;
     margin-top: 29px;
   }
-
 }
 .link:hover {
   color: rgb(12, 145, 145);
 }
-
 .countNone {
   display: none;
 }

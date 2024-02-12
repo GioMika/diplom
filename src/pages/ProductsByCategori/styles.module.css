@@ -1,8 +1,4 @@
-
-
-
 .elementsForms {
-  
   color: var(--txt-black, #282828);
   font-family: Montserrat;
   font-size: 64px;
@@ -10,23 +6,19 @@
   font-weight: 700;
   line-height: 110%;
   padding-top: 150px;
-padding-bottom: 20px;
-text-align: center;
+  padding-bottom: 20px;
+  text-align: center;
 }
-
 .forms {
   display: flex;
-padding-left: 50px;
-padding-top: 30px;
+  padding-left: 50px;
+  padding-top: 30px;
 }
-
-
 .btns {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-
 .btn {
   display: flex;
   padding: 8px 16px;
@@ -35,9 +27,8 @@ padding-top: 30px;
   gap: 10px;
   border-radius: var(--radius-small, 6px);
   border: 1px solid var(--grey-divider, #ddd);
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
-
 .link {
   text-decoration: none;
 }

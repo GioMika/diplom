@@ -1,11 +1,9 @@
 import { useDispatch } from "react-redux";
 import styles from "./styles.module.css";
 import { addItemCart } from "../../store/allSlices/cartSlice";
-import { Link } from "react-router-dom";
 
 function Products({ products }) {
   const dispatch = useDispatch();
-
   return (
     <section className={styles.sectionAllProduscts}>
       {products
@@ -17,33 +15,26 @@ function Products({ products }) {
             style={{
               backgroundImage: `url(http://localhost:3333${elem.image})`,
               backgroundSize: "cover",
-            }}
-          >
+            }}>
             <button
               onClick={() => dispatch(addItemCart({ count: 1, ...elem }))}
-              className={styles.addProducts}
-            >
+              className={styles.addProducts}>
               ADD TO CART
             </button>
             <p className={styles.textTitle}>{elem.title}</p>
-
             <div className={styles.price_discount}>
               <p
                 className={
                   elem.discont_price === null
                     ? styles.prise_sale_none
-                    : styles.prise_sale
-                }
-              >
+                    : styles.prise_sale  }>
                 {`$${elem.discont_price}`}
               </p>
               <p
                 className={
                   elem.discont_price === null
                     ? styles.prise_sale
-                    : styles.prise_default
-                }
-              >
+                    : styles.prise_default } >
                 {`$${elem.price}`}
               </p>
             </div>
@@ -52,10 +43,10 @@ function Products({ products }) {
               {" "}
               {elem.discont_price
                 ? " -" +
-                  Math.floor(
-                    ((elem.price - elem.discont_price) / elem.price) * 100
-                  ) +
-                  " % "
+                Math.floor(
+                  ((elem.price - elem.discont_price) / elem.price) * 100
+                ) +
+                " % "
                 : null}
             </p>
           </div>
@@ -63,5 +54,4 @@ function Products({ products }) {
     </section>
   );
 }
-
 export default Products;

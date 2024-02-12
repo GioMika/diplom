@@ -10,7 +10,6 @@ function NotFoundPage() {
         <img src={notFound} alt="notFound" />
         <h2 className={styles.h4}>4</h2>
       </div>
-
       <div className={styles.textNotFound}>
         <h2 className={styles.text_h2}>Page Not Found</h2>
         <p className={styles.paragraph}>
@@ -18,13 +17,12 @@ function NotFoundPage() {
           to the homepage.
         </p>
         <Link className={styles.link} to={'/'}>
-        <button className={styles.btn}>
-          Go Home
+          <button className={styles.btn}>
+            Go Home
           </button>
-          </Link>
+        </Link>
       </div>
     </>
   );
 }
-
 export default NotFoundPage;

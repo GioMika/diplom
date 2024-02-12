@@ -5,13 +5,11 @@ import { discountProducts } from "../../../store/allSlices/allProductsSlice";
 import { discountProductsCat } from "../../../store/allSlices/productsByCategory";
 function SaleForm() {
   const dispatch = useDispatch();
-
   const [checkBox, setCheckBox] = useState(false);
   const changeState = () => {
     setCheckBox(!checkBox);
   };
-
-  const sale = (e) => {
+    const sale = (e) => {
     dispatch(discountProducts(e.target.checked));
     dispatch(discountProductsCat(e.target.checked));
   };
@@ -29,5 +27,4 @@ function SaleForm() {
     </div>
   );
 }
-
 export default SaleForm;

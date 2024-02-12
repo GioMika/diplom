@@ -10,7 +10,6 @@ const cartSlice = createSlice({
       const productCart = state.find(({ id }) => {
         return id === action.payload.id
       })
-
       if (!productCart) {
         state.push(
           action.payload
@@ -18,39 +17,38 @@ const cartSlice = createSlice({
       } else {
         productCart.count++
       }
-      localStorage.setItem('item',JSON.stringify(state))
+      localStorage.setItem('item', JSON.stringify(state))
     },
 
-    countPlus(state,action){
-    const product =  state.find(el  =>  el.id === action.payload)
-    if(product){
-      product.count++
-    }
+    countPlus(state, action) {
+      const product = state.find(el => el.id === action.payload)
+      if (product) {
+        product.count++
+      }
     },
-    countMinus(state,action){
-    const product =   state.find(el  =>  el.id === action.payload)
+    countMinus(state, action) {
+      const product = state.find(el => el.id === action.payload)
 
-  if(product.count > 1){
-    product.count--
-  }else{
- state =  state.filter((elem) =>  elem.id !== action.payload)
-  }
+      if (product.count > 1) {
+        product.count--
+      } else {
+        state = state.filter((elem) => elem.id !== action.payload)
+      }
     },
 
-    deleteItem(state,action){
+    deleteItem(state, action) {
       const index = state.findIndex(el => el.id === action.payload);
       if (index !== -1) {
-        state.splice(index, 1)}
-      localStorage.setItem('item',JSON.stringify(state))
+        state.splice(index, 1)
+      }
+      localStorage.setItem('item', JSON.stringify(state))
     },
-
-
-    resetCart:  (state) => {
-    state.length = 0;
+    resetCart: (state) => {
+      state.length = 0;
     },
   }
-  
+
 })
 
-export const {resetCart,addItemCart,countPlus,countMinus,deleteItem} = cartSlice.actions;
+export const { resetCart, addItemCart, countPlus, countMinus, deleteItem } = cartSlice.actions;
 export default cartSlice.reducer;

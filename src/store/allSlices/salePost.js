@@ -1,7 +1,4 @@
-
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-
-
 
 export const salePost = createAsyncThunk('sale/salePost', async (data, { rejectWithValue }) => {
   try {
@@ -19,15 +16,11 @@ export const salePost = createAsyncThunk('sale/salePost', async (data, { rejectW
   }
 });
 
-
 export const saleSlice = createSlice({
   name: 'sale',
-
   initialState: {
-
     status: null,
   },
-
   extraReducers: (builder) => {
     builder
       .addCase(salePost.pending, (state,) => {
@@ -39,8 +32,6 @@ export const saleSlice = createSlice({
       .addCase(salePost.rejected, (state) => {
         state.status = 'rejected';
       })
-
-
   }
 })
 

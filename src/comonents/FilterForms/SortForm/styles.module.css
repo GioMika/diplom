@@ -3,16 +3,14 @@
   gap: 10px;
   padding-bottom: 30px;
 }
-
 .select_sort {
   padding: 9px 8px 8px 16px;
   border-radius: var(--radius-small, 6px);
   border: 1px solid var(--grey-divider, #ddd);
   border-radius: var(--radius-small, 6px);
   border: 1px solid var(--grey-divider, #ddd);
-padding-left: 10px;
+  padding-left: 10px;
 }
-
 .sorted {
   color: var(--txt-black, #282828);
   font-family: Montserrat;
@@ -22,8 +20,7 @@ padding-left: 10px;
   line-height: 130%;
   margin-bottom: 10px;
 }
-
-@media(max-width:600px){
+@media(max-width:600px) {
   .sorted {
     padding-left: 10px;
     font-size: 15px;

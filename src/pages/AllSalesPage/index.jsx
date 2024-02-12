@@ -2,7 +2,7 @@
 import Products from "../../comonents/Products/Index";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import allProducts from "../../request/allProducts";
+import { allProducts } from "../../store/allSlices/allProductsSlice";
 import SortForm from "../../comonents/FilterForms/SortForm";
 import FilterForm from "../../comonents/FilterForms/FilterForm";
 import styles from "./styles.module.css";
@@ -14,7 +14,6 @@ function AllSalesPage() {
     return elem.discont_price;
   });
   const dispatch = useDispatch();
-
   useEffect(() => {
     dispatch(allProducts());
   }, [dispatch]);
@@ -26,13 +25,11 @@ function AllSalesPage() {
           <Link className={styles.link} to={'/'}>
             <button className={styles.btn}>Main Page</button>
           </Link>
-
           <Link className={styles.link} to={'/products'}>
             <button className={styles.btn}>All Products</button>
           </Link>
         </div>
         <h1>Discounted items</h1>
-
         <div className={styles.forms}>
           <FilterForm />
           <SortForm />

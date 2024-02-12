@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import s from "./style.module.css";
 import { filterPrice } from "../../../store/allSlices/allProductsSlice";
 import { useDispatch } from "react-redux";
@@ -8,10 +8,10 @@ function FilterForm() {
   const dispatch = useDispatch();
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(Infinity);
-  
-  const handleChange = (min, max) => {
- dispatch(filterPrice({ minPrice: min, maxPrice: max }));
- dispatch(filterPriceCat({ minPrice: min, maxPrice: max }))
+
+    const handleChange = (min, max) => {
+    dispatch(filterPrice({ minPrice: min, maxPrice: max }));
+    dispatch(filterPriceCat({ minPrice: min, maxPrice: max }))
   };
   let handleMinChange = (e) => {
     let value = +e.target.value || 0;
@@ -21,7 +21,6 @@ function FilterForm() {
     setMinPrice(value);
     handleChange(value, maxPrice);
   };
-
   const handleMaxChange = (e) => {
     let value = +e.target.value || Infinity;
     if (value < 0) {

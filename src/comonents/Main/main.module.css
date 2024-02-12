@@ -5,6 +5,7 @@
   height: 70vh;
   padding-top: 100px;
   padding-bottom: 200px;
+  /* background-repeat: no-repeat; */
 }
 
 .main {
@@ -117,7 +118,7 @@
     }
 
     .text_h1 h1 {
-      font-size: 46px;
+      font-size: 36px;
     }
     .btn{
      margin-left: 35px;
@@ -131,5 +132,9 @@
 
   .textCategories {
     margin-left: -36px;
+  }
+
+  .img {
+    height: 40vh;
   }
 }

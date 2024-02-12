@@ -1,22 +1,18 @@
 body {
   background-color: #f4f8fa;
 }
-
 .carItem {
   padding-top: 150px;
   display: flex;
   justify-content: space-evenly;
   padding-left: 50px;
 }
-
 .count {
   color: var(--txt-grey, #5f5959);
 }
-
 .sumPrice {
   color: var(--txt-grey, #5f5959);
 }
-
 .total {
   display: flex;
   align-items: center;
@@ -28,7 +24,6 @@ body {
   font-weight: 700;
   line-height: 110%;
 }
-
 .counter {
   display: flex;
   align-items: center;
@@ -40,18 +35,15 @@ body {
   font-weight: 700;
   line-height: 110%;
 }
-
 .input {
   width: 300px;
   margin: 0 auto;
 }
-
 .submit {
   color: red;
   width: 200px;
   height: 50px;
   margin-top: 20px;
-
   color: var(--txt-white, #fff);
   text-align: center;
   font-family: Montserrat;
@@ -59,7 +51,6 @@ body {
   font-style: normal;
   font-weight: 600;
 }
-
 .all_inputs {
   height: 100%;
   background-color: #031c2b;
@@ -70,7 +61,6 @@ body {
   margin-top: 30px;
   margin-bottom: 20px;
 }
-
 .formt_elemens {
   width: 500px;
   border-radius: var(--radius-big, 12px);
@@ -79,9 +69,6 @@ body {
   padding-top: 30px;
   margin-top: 70px;
 }
-
-
-
 .items {
   color: var(--txt-grey, #8b8b8b);
   font-family: Montserrat;
@@ -91,7 +78,6 @@ body {
   line-height: 130%;
   padding-left: 20px;
 }
-
 .paragraph {
   color: var(--txt-black, #282828);
   font-family: Montserrat;
@@ -102,14 +88,12 @@ body {
   padding-left: 10px;
   padding-bottom: 30px;
 }
-
 @media (max-width: 700px) {
   .modal {
     margin-left: -535px;
     display: grid;
     gap: 10px;
   }
-
   .delete {
     color: red;
     padding-left: 320px;
@@ -117,25 +101,20 @@ body {
     font-size: 20px;
     cursor: pointer;
   }
-
   .submit {
     margin-top: 20px;
   }
-
   .carItem {
     display: block;
     justify-content: center;
     align-items: center;
   }
-
   .counter {
     margin-left: 200px;
   }
-
   .total {
     margin-left: 200px;
   }
-
   .all_inputs {
     height: 100%;
     background-color: #031c2b;
@@ -146,13 +125,11 @@ body {
     margin-top: 30px;
     margin-bottom: 20px;
   }
-
   .cart {
     margin: 0 auto;
     margin-left: -80px;
     display: grid;
   }
-
   .paragraph {
     margin: 0 auto;
     color: var(--txt-black, #282828);
@@ -163,12 +140,10 @@ body {
     line-height: 110%;
     text-align: center;
   }
-
   .items {
     text-align: center;
     margin-left: -170px;
   }
-
   .formt_elemens {
     margin-top: 50px;
     width: 100%;
@@ -176,7 +151,6 @@ body {
     padding-bottom: 20px;
   }
 }
-
 .all_elements {
   width: 100%;
   display: flex;
@@ -187,7 +161,6 @@ body {
   padding-top: 32px;
   max-width: 100%;
 }
-
 .all_inputs {
   display: flex;
   flex-direction: column;
@@ -200,12 +173,10 @@ body {
     flex-direction: column;
     gap: 5px;
   }
-
   .section {
     margin-top: 70px;
   }
 }
-
 .input {
   background-color: transparent;
   border: 1px solid white;
@@ -215,7 +186,6 @@ body {
   font-size: 20px;
   padding-left: 32px;
 }
-
 .submit {
   display: flex;
   width: 316px;
@@ -226,7 +196,6 @@ body {
   border-radius: var(--radius-small, 6px);
   background: var(--white, #fff);
   border: none;
-
   color: var(--txt-black, #282828);
   text-align: center;
   font-family: Montserrat;
@@ -236,11 +205,9 @@ body {
   line-height: 130%;
   margin-bottom: 10px;
 }
-
 .input::placeholder {
   color: rgb(81, 64, 64);
 }
-
 .modal_container {
   position: fixed;
   left: 0;
@@ -249,7 +216,6 @@ body {
   height: 100vh;
   background: rgba(128, 128, 128, 0.5);
 }
-
 .modal {
   width: 25rem;
   height: 15rem;
@@ -264,7 +230,6 @@ body {
   color: rgb(56, 234, 219);
   font-size: 20px;
 }
-
 .delete {
   color: red;
   padding-left: 320px;
@@ -272,7 +237,6 @@ body {
   font-size: 20px;
   cursor: pointer;
 }
-
 .modal_close {
   display: none;
 }

@@ -21,7 +21,7 @@ function App() {
         <Route path="/products" element={<AllProductsPage />} />
         <Route path="/sale" element={<AllSalesPage />} />
         <Route path="/cart" element={<CartPage />} />
-        <Route path="*" element={<NotFoundPage />} />
+        <Route path="/*" element={<NotFoundPage />} />
         <Route path="/categories" element={<PagesCategories />} />
         <Route path="/categories/:id" element={<ProductsByCategori />} />
         <Route path="/products/:product_id" element={<SingleProductsPage/>} />
@@ -30,5 +30,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
