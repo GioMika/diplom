@@ -19,7 +19,7 @@ function Sales() {
   return (
     <>
       <h2 className={styles.sale}>Sale</h2>
-      <div className={styles.allElements} id='scrole'>
+      <span className={styles.allElements} id='scrole'>
         {productDiscount.map((elem) => {
           return (
             <div key={elem.id} className={styles.imgList}>
@@ -65,7 +65,7 @@ function Sales() {
             </div>
           );
         })}
-      </div>
+      </span>
     </>
   );
 }

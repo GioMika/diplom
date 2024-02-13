@@ -21,6 +21,7 @@
   height: 250px;
   border-radius: 10px;
 }
+
 .product_prise {
   display: flex;
   gap: 1rem;

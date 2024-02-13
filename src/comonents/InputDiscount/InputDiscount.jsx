@@ -20,7 +20,6 @@ function InputDiscount() {
       <h2 className={styles.text_h2}>5% off on the first order</h2>
       <div className={styles.all_elements}>
         <img className={styles.image} src={flowers} alt="flowers" />
-
         <form onSubmit={handleSubmit(getDataFromInputs)} className={styles.all_inputs}>
           <input
             {...register("name", nameValidation)}
