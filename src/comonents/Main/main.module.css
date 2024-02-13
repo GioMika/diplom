@@ -5,7 +5,6 @@
   height: 70vh;
   padding-top: 100px;
   padding-bottom: 200px;
-  /* background-repeat: no-repeat; */
 }
 
 .main {
@@ -18,8 +17,7 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
-  padding-left: 40px;
-
+  padding-left: 80px;
   margin-top: -60px;
 }
 
@@ -71,6 +69,9 @@
   border: 1px solid var(--grey-divider, #ddd);
   margin-top: 50px;
   margin-left: 50px;
+ background-color: rgb(241, 241, 232);
+ cursor: pointer;
+margin-left: 105px;
 }
 
 .link {
@@ -102,6 +103,8 @@
 
   .text_h1 {
     margin-top: -40px;
+    padding-right: 59px;
+    padding-left: 105px;
   }
 
   .ItemsCategories {
@@ -128,6 +131,7 @@
   .btnCategories {
     margin-top: 23px;
     width: 200px;
+    margin-left: 100px;
   }
 
   .textCategories {

@@ -11,6 +11,7 @@
   line-height: 130%;
   margin-left: 3vw;
 }
+
 .check {
   display: flex;
   width: 36px;
@@ -19,13 +20,15 @@
   border-radius: 0.4px solid red;
   border: 1px solid var(--grey-divider, #ddd);
 }
+
 .text {
   color: var(--txt-black, #282828);
-  font-family: Montserrat;
-  font-size: 20px;
+font-family: Montserrat;
+font-size: 20px;
 }
-@media(max-width:600px) {
-  .text {
+
+@media(max-width:600px){
+  .text{
     width: 110px;
     font-size: 15px;
     margin-left: -10px;

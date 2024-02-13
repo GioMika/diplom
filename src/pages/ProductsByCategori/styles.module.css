@@ -7,7 +7,7 @@
   line-height: 110%;
   padding-top: 150px;
   padding-bottom: 20px;
-  text-align: center;
+
 }
 .forms {
   display: flex;
@@ -16,7 +16,7 @@
 }
 .btns {
   display: flex;
-  justify-content: center;
+  padding-left: 50px;
   gap: 20px;
 }
 .btn {

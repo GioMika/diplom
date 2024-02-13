@@ -32,7 +32,8 @@ function FilterForm() {
 
   return (
     <div className={s.inputs}>
-      <p className={s.priceText}>Price</p>
+    <p className={s.priceText}>Price</p>
+    <div className={s.inputForm}>
       <input
         value={minPrice === 0 ? "" : minPrice}
         onChange={handleMinChange}
@@ -47,6 +48,7 @@ function FilterForm() {
         type="number"
         placeholder="to"
       />
+      </div>
     </div>
   );
 }

@@ -2,6 +2,7 @@
   display: grid;
   gap: 10px;
 }
+
 .price {
   display: flex;
   width: 112px;
@@ -11,17 +12,19 @@
   border-radius: var(--radius-small, 6px);
   border: 1px solid var(--grey-divider, #DDD);
 }
+
 .priceText {
   color: var(--txt-black, #282828);
-  font-family: Montserrat;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 130%;
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 130%;
 }
-@media(max-width:600px) {
-  .priceText {
-    font-size: 15px;
-    padding-left: 10px;
-  }
+
+@media(max-width:600px){
+.priceText {
+  font-size: 15px;
+  padding-left: 10px;
+}
 }

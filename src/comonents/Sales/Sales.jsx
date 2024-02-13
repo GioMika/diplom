@@ -19,7 +19,7 @@ function Sales() {
   return (
     <>
       <h2 className={styles.sale}>Sale</h2>
-      <div className={styles.allElements}>
+      <div className={styles.allElements} id='scrole'>
         {productDiscount.map((elem) => {
           return (
             <div key={elem.id} className={styles.imgList}>

@@ -8,26 +8,28 @@ function Header() {
   const sumCunt = useSelector((state) => state.cart);
   const [now, setNow] = useState(new Date())
   setInterval(() => setNow(new Date()))
+  const linkActive = ({ isActive}) => isActive ? styles.link: styles.link_default;
+
   return (
     <header className={styles.header}>
-      <NavLink className={styles.link} to="/">
+      <NavLink className={linkActive } to="/">
         {" "}
         <img className={styles.logo} src={logo} alt="logo" />
         <p className={styles.timer}>TIME: {now.toLocaleTimeString()}</p>
       </NavLink>
       <div className={styles.paragraph}>
-        <NavLink className={styles.link} to="/">
+        <NavLink className={linkActive } to="/">
           <p className={styles.paragraph}>Main Page</p>
         </NavLink >
-        <NavLink className={styles.link} to="/categories">
+        <NavLink className={linkActive } to="/categories">
           <p className={styles.paragraph}>Categories</p>
         </NavLink>
 
-        <NavLink className={styles.link} to="/products">
+        <NavLink className={linkActive } to="/products">
           <p className={styles.paragraph}>All products</p>
         </NavLink>
 
-        <NavLink className={styles.link} to="/sale">
+        <NavLink className={linkActive } to="/sale">
           <p className={styles.paragraph}>All sales</p>
         </NavLink>
       </div>

@@ -1,4 +1,3 @@
-// import AllSales from "../../comonents/AllSales/AllSales";
 import Products from "../../comonents/Products/Index";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";

@@ -1,6 +1,5 @@
 .formsElements {
   padding-top: 120px;
-  text-align: center;
 }
 .forms {
   display: flex;
@@ -21,12 +20,12 @@ h1 {
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
-  line-height: 110%;
+  padding-left: 50px;
 }
 .btns {
   display: flex;
   gap: 20px;
-  padding-left: 40px;
+  padding-left: 50px;
   margin-bottom: 40px;
   padding-top: 30px;
 }

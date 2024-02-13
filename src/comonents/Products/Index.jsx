@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import styles from "./styles.module.css";
 import { addItemCart } from "../../store/allSlices/cartSlice";
-
+import { Link } from "react-router-dom";
 function Products({ products }) {
   const dispatch = useDispatch();
   return (
@@ -9,6 +9,7 @@ function Products({ products }) {
       {products
         .filter((item) => item.showProduct && item.showProductFilter)
         .map((elem, id) => (
+         
           <div
             className={styles.imgList}
             key={id}
@@ -21,8 +22,11 @@ function Products({ products }) {
               className={styles.addProducts}>
               ADD TO CART
             </button>
+            <Link className={styles.link} to={`/products/${elem.id}`}>
             <p className={styles.textTitle}>{elem.title}</p>
+            </Link>
             <div className={styles.price_discount}>
+              
               <p
                 className={
                   elem.discont_price === null
@@ -50,6 +54,7 @@ function Products({ products }) {
                 : null}
             </p>
           </div>
+          
         ))}
     </section>
   );
